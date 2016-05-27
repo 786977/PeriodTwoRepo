@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script src="myscript.js"></script>
+</head>
 <body>
 
-<p>Creating a JavaScript Object.</p>
+<p>This example calls a function which performs a calculation, and returns the result:</p>
 
 <p id="demo"></p>
 
 <script>
-var car = {type:"Fiat", model:"500", color:"white"};
-document.getElementById("demo").innerHTML = car.type;
+function myFunction(a, b) {
+    return a * b;
+}
+document.getElementById("demo").innerHTML = myFunction(4, 3);
 </script>
 
 </body>
